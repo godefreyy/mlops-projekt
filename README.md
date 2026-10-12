@@ -24,3 +24,17 @@ zarządzanie środowiskiem i wersjonowanie danych.
 UV był najszybszy podczas testów. Przy ponownej instalacji z cache uzyskał 1,30 s. Conda również korzystała z cache, więc czasy są orientacyjne.
 
 Venv jest prosty w użyciu, a Conda przydaje się w bardziej rozbudowanych projektach ML. DVC służy do wersjonowania danych, natomiast Git do wersjonowania kodu i plików opisujących dane.
+
+
+
+
+
+### Ćwiczenie samodzielne 2 – DVC Remote
+
+Utworzono drugi magazyn DVC na Dysku Google o nazwie `google-drive`.
+
+Do wersjonowania dodano zbiór `iris.csv` za pomocą `dvc add data/iris.csv`.
+
+Dane przesłano poleceniem `dvc push data/iris.csv.dvc -r google-drive`.
+
+Przesyłanie zakończyło się sukcesem (`1 file pushed`). Ponowne wykonanie polecenia zwróciło `Everything is up to date`.
