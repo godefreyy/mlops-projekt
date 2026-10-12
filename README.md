@@ -38,3 +38,20 @@ Do wersjonowania dodano zbiór `iris.csv` za pomocą `dvc add data/iris.csv`.
 Dane przesłano poleceniem `dvc push data/iris.csv.dvc -r google-drive`.
 
 Przesyłanie zakończyło się sukcesem (`1 file pushed`). Ponowne wykonanie polecenia zwróciło `Everything is up to date`.
+
+
+
+
+### Ćwiczenie samodzielne 3 – Odtworzenie projektu
+
+W ramach testu sklonowano własne repozytorium do folderu `mlops-test`.
+
+Środowisko odtworzono za pomocą:
+- `uv venv --python 3.12`
+- `uv pip install -r requirements.txt`
+
+Zainstalowano 124 pakiety. Następnie odtworzono dane `housing.csv` i `iris.csv` za pomocą `dvc pull`.
+
+**Napotkane problemy:** Początkowo UV korzystał z niewłaściwego środowiska. Rozwiązaniem było wskazanie interpretera przez `--python`. Dostęp do Google Drive wymagał również lokalnej konfiguracji OAuth.
+
+Ostatecznie środowisko i oba zbiory danych zostały poprawnie odtworzone.
