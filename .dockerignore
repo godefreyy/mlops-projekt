@@ -1,0 +1,14 @@
+.git
+.venv/
+.dvc/
+data/
+mlruns/
+mlartifacts/
+optuna.db
+tests/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*

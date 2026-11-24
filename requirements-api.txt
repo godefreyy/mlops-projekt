@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+mlflow==3.14.0
+scikit-learn==1.9.1
+numpy==2.5.4
+skops==0.16.0
+pyyaml
+psycopg2-binary==2.9.10
